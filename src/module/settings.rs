@@ -10,11 +10,11 @@ pub fn command() -> Command {
     .alias("s")
     .subcommand(
         Command::new("path").alias("p")
-            .about("Set the storage path of ojc cli (alias: p)")
-            .args([
-                arg!(<NAME> "change the storage path"),
-                Arg::new("force").short('f').long("force").help("force to perform the operation").action(ArgAction::SetTrue),
-            ])
+        .about("Set the storage path of ojc cli (alias: p)")
+        .args([
+            arg!(<NAME> "change the storage path"),
+            Arg::new("force").short('f').long("force").help("force to perform the operation").action(ArgAction::SetTrue),
+        ])
     )
 }
 

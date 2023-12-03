@@ -5,7 +5,7 @@ const AUTHOR:&str = "Rotriw";
 const ABOUT:&str = "A CLI tool for OJ";
 
 mod basics;
-mod scripts;
+mod module;
 mod macros;
 
 fn main() {
